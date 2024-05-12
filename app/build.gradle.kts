@@ -37,6 +37,12 @@ android {
 
 dependencies {
     implementation(project(":core:network"))
+    implementation(project(":core:data"))
+    implementation(project(":core:datasource"))
+    implementation(project(":core:domain"))
+
+    implementation(project(":feature:pokemon_catalog"))
+
     implementation(platform(libs.koin.bom))
     implementation(libs.koin.android)
     implementation(libs.koin.core)
@@ -46,6 +52,8 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
+    implementation(libs.androidx.navigation.ui)
+    implementation(libs.androidx.navigation.fragment)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

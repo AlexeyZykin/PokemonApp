@@ -6,4 +6,5 @@ plugins {
     alias(libs.plugins.navigation.safeargs) apply false
     alias(libs.plugins.kapt)
     alias(libs.plugins.secrets) apply false
+    alias(libs.plugins.jetbrains.kotlin.jvm) apply false
 }

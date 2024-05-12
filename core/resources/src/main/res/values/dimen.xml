@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="margin_standard">16dp</dimen>
+    <dimen name="margin_medium">32dp</dimen>
+    <dimen name="margin_large">64dp</dimen>
+
+    <dimen name="card_corner_radius">16dp</dimen>
+    <dimen name="card_elevation">8dp</dimen>
+
+    <dimen name="title_large">22sp</dimen>
+    <dimen name="title_medium">20sp</dimen>
+    <dimen name="title_standard">16sp</dimen>
+    <dimen name="title_small">14sp</dimen>
+    <dimen name="body_large">16sp</dimen>
+    <dimen name="body_standard">14sp</dimen>
+    <dimen name="label_standard">16sp</dimen>
+    <dimen name="label_small">10sp</dimen>
+
+</resources>
