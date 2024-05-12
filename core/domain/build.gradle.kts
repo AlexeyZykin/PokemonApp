@@ -23,6 +23,7 @@ android {
 dependencies {
     implementation(project(":core:data"))
     implementation(project(":core:model"))
+    implementation(project(":core:common"))
 
     implementation(platform(libs.koin.bom))
     implementation(libs.koin.android)

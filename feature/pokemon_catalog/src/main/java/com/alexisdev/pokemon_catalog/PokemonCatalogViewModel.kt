@@ -5,6 +5,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import androidx.paging.PagingData
+import androidx.paging.cachedIn
 import com.alexisdev.domain.FetchPokemonListUseCase
 import com.alexisdev.model.Pokemon
 import kotlinx.coroutines.Dispatchers
@@ -22,8 +23,10 @@ class PokemonCatalogViewModel(
     }
 
     private fun fetchPokemonList() = viewModelScope.launch(Dispatchers.IO) {
-        fetchPokemonListUseCase.invoke().distinctUntilChanged().collect { pagingData ->
-            _pokemons.postValue(pagingData)
-        }
+        fetchPokemonListUseCase.invoke()
+            .cachedIn(viewModelScope)
+            .collect { pagingData ->
+                _pokemons.postValue(pagingData)
+            }
     }
 }

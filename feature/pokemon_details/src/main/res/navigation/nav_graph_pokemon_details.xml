@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_pokemon_details"
+    app:startDestination="@id/pokemonDetailsFragment">
+
+    <fragment
+        android:id="@+id/pokemonDetailsFragment"
+        android:name="com.alexisdev.pokemon_details.PokemonDetailsFragment"
+        android:label="fragment_pokemon_details"
+        tools:layout="@layout/fragment_pokemon_details" >
+        <argument
+            android:name="pokemon_name"
+            app:argType="string" />
+    </fragment>
+</navigation>

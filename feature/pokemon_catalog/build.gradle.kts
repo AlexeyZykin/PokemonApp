@@ -27,6 +27,8 @@ dependencies {
     implementation(project(":core:domain"))
     implementation(project(":core:model"))
     implementation(project(":core:resources"))
+
+    implementation(project(":feature:pokemon_details"))
     
     implementation(platform(libs.koin.bom))
     implementation(libs.koin.android)

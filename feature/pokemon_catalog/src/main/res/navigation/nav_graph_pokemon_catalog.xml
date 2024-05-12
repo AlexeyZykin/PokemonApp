@@ -9,5 +9,14 @@
         android:id="@+id/pokemonCatalogFragment"
         android:name="com.alexisdev.pokemon_catalog.PokemonCatalogFragment"
         android:label="fragment_pokemon_catalog"
-        tools:layout="@layout/fragment_pokemon_catalog" />
+        tools:layout="@layout/fragment_pokemon_catalog" >
+        <action
+            android:id="@+id/action_pokemonCatalogFragment_to_nav_graph_pokemon_details"
+            app:destination="@id/nav_graph_pokemon_details">
+            <argument
+                android:name="pokemon_name"
+                app:argType="string" />
+        </action>
+    </fragment>
+    <include app:graph="@navigation/nav_graph_pokemon_details" />
 </navigation>
